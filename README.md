@@ -23,13 +23,18 @@ soundnessup install
 ```bash
 soundnessup update
 ```
+## Generate New Key
 ```bash
 soundness-cli generate-key --name my-key
 ```
-## To view your seedphrase
+## Importing a Key Pair
+**If you saved your mnemonic previously, you can import it to ``key_store.json`` by using following command:**
 ```bash
-soundness-cli list-keys
+soundness-cli import-key --name <name> --mnemonic "<mnemonic>"
 ```
+**REPLACE ``<name>`` WITH KEY NAME OF YOUR CHOICE**
+
+**REPLACE ``<mnemonic>`` WITH YOUR SEED PHRASE**
 
 # Step 2: Play the Game
 
